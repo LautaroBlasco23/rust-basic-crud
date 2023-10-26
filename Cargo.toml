@@ -6,3 +6,11 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+actix-web = "4"
+chrono = { version = "0.4.31", features = ["serde"]}
+serde = {version = "1", features = ["derive"]}
+serde_json = "1.0.107"
+uuid = {version = "1.4.1", features = ["serde", "v4"]}
+
+# to see the actix logs in console:
+env_logger = "0.10.0"
